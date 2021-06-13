@@ -14,7 +14,7 @@
 			<!--NavBar-->
 			<nav class="navbar">
 				<div class="navbar__brand">
-					<img src="./assets/logo.png" alt="logo" class="navbar__logo">
+					<img src="./assets/logo.png" alt="logo" class="navbar__logo" id="nav__logo">
 				</div>
 				<div class="navbar__nav__items">
 					<button class="nav__item button__primary">Order Food</button>
@@ -25,18 +25,101 @@
 			<!--Hero section-->
 			<section class="hero__container">
 				<div class="hero__image__container">
+					<div class="hero__image__bg"> 
+						<img src="./assets/svg/heroShape.svg" class="hero__image__background" alt="background image">
+					</div>
+					<div class="hero__image__bg" id="hero__image__bg1"> 
+						<img src="./assets/svg/herobgpattren.svg" class="hero__image__background" alt="background image">
+					</div>
+
 					<img class="hero__image" src="./assets/hero.jpg" alt="hero image">
+					
 				</div>
 				<div class="hero__description">
-					<h1 class="hero_text">
+					<h1 class="hero__text">
 						Order food from favourite restaurants near you.
 					</h1>
 					<button class="button__primary">Order Now</button>
 				</div>
-				
 			</section>
-			
+			<!--Explore Menu Section-->
+			<section class="explore__menu__container">
+				<h1 class="explore__menu__text">
+					Explore Our Menu
+				</h1>
+				<div class="explore__menu__gradient__bg"></div>
+				<!--Burger-->
+				<div class="explore__menu__lists">
+					<div class="food__menu__card">
+						<img src="./assets/burger.jpg" alt="Burger" class="food__image">
+						<div class="food__menu__card__description">
+							<h3 class="food__title">Burgers</h3>
+							<p class="food__restaurants">Burger King, Mcdonalds, Burder Place<span style="color: red;">+3</span></p>
+						</div>
+					</div>
+					<!--Pizza-->
+					<div class="food__menu__card" id="pizza__card">
+						<img src="./assets/pizza.jpg" alt="Pizza" class="food__image">
+						<div class="food__menu__card__description">
+							<h3 class="food__title">Pizza</h3>
+							<p class="food__restaurants">Pizza Hut, Domino's Pizza<span style="color: red;">+3</span></p>
+						</div>
+					</div>
+					<!--Icecream-->
+					<div class="food__menu__card" >
+						<img src="./assets/iceCream.jpg" alt="IceCream" class="food__image">
+						<div class="food__menu__card__description">
+							<h3 class="food__title">IceCream</h3>
+							<p class="food__restaurants">Baskin Robins, Ibaco<span style="color: red;">+3</span></p>
+						</div>
+					</div>
+				</div>
+				<div class="explore__menu__view__more">
+				<button class="button__primary" id="view__more">View More</button></div>
+			</section>
+			<!--Restaurants-->
+			<section class="restaurants__container">
+				<h1 class="restaurants__description">Order From 100s of restaurants</h1>
+				<div class="restaurants__flex">
+					<div class="restaurants__flex__grid__row__one">
+						<div class="restaurant__1__image">
+						<img src="./assets/restaurant1.jpg" class="restaurant__1" alt="restaurant1"></div>
+						<div class="restaurant__2__image"><img src="./assets/restaurant2.jpg" class="restaurant__2" alt="restaurant2"></div>
+					</div>
+					<div class="restaurants__flex__grid__row__two">
+						<div class="restaurant__3__image"><img src="./assets/restaurant3.jpg" class="restaurant__3" alt="restaurant3"></div>
+						<div class="restaurant__4__image"><img src="./assets/restaurant4.jpg" class="restaurant__4" alt="restaurant4"></div>
+
+					</div>
+				</div></section>
+				<section class="updation__related">
+					<h1 class="updation__heading">Stay Updated</h1>
+					<div class="update">
+					<div class="updation__method">
+						<input type="email" name="Email" class="email__input" placeholder="email@email.com"></div>
+					<button class="button__primary">Get Updates</button>
+					</div>
+				</section>
+				<section class="quote__section">
+					<div class="quote__body">
+						</div><h1 class="quote__text">When a man's stomach is full it makes no difference whether he is rich
+          						or poor.</h1>
+					
+				</section>			
 		</main>
+		<!--Footer-->
+
+				<footer class="website__footer">
+					<img src="./assets/logo.png" class="logo">
+					<ul>
+						<li>Pricing</li>
+						<li>Terms and Conditions</li>
+						<li>Partnership</li>
+						<li>Career</li>
+						<li>Contact</li>
+					</ul>
+					
+				</footer>
 		
 </body>
 </html>
