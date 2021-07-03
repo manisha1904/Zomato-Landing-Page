@@ -25,6 +25,6 @@ Navigation Bar includes Logo & Order Button
       
 Consists of logo and other details like pricing, contact etc
 
-![zomato](https://user-images.githubusercontent.com/68684840/124352097-dde60880-dc1b-11eb-91c5-078f35442dad.PNG)
+
 
 
