@@ -9,7 +9,6 @@
 body{
 	font-family: "Merriweather", sans-serif;
 	background: #ebf2ff;
-	overflow-x: hidden;
 }
 
 .button__primary{
@@ -29,7 +28,7 @@ background-image: linear-gradient(
 .button__primary:hover{
 	background: red;
 	color: white;
-	width: 170px;
+	
 }
 .container{
 	width: 100%;
@@ -38,7 +37,7 @@ background-image: linear-gradient(
 }
 .navbar{
 	display: flex;
-	justify-content: space-around;
+	
 	align-items: center;
 	background: white;
 	padding-bottom: 20px;
@@ -268,8 +267,14 @@ ul{
 
 
 @media (min-width: 768px){
+	body{
+		margin-right: 200px;
+	}
+	main{
+		margin-right: 100px;
+	}
 	.navbar{
-		justify-content: space-between;
+		justify-content: space-evenly;
 		padding: 10px 20px;
 		height: 70px;
 		box-shadow: 0 15px 12px -10px #c3d6e4;
@@ -283,7 +288,7 @@ ul{
 		font-size: 20px;
 	}
 	.hero__container{
-		display: flex;
+		display: block;
 		flex-direction: row-reverse;
 		align-items: center;
 		justify-content: space-around;
@@ -307,11 +312,69 @@ ul{
 	.hero__text{
 		font-size: 40px;
 		color: #1d3557;
-
-
 	}
+	
+	.explore__menu__lists{
+		display: block;
+	}
+	
 	.explore__menu__container{
-		position: relative;
+		margin-right: 90px;
+	}
+	.restaurants__container{
+		display: block;
+	}
+	.restaurant__1, .restaurant__4{
+	width: 250px;
+	height: 200px;
+}
+.restaurant__2, .restaurant__3{
+	
+	width: 200px;
+	height: 260px;
+}
+.restaurant__1__image,
+.restaurant__2__image,
+.restaurant__3__image,
+.restaurant__4__image{
+	width:auto;
+	border-radius: 7px;
+}
+.updation__related{
+	align-items: center;
+	margin-left: 130px;
+}
+.updation__heading{
+	font-size: 30px;
+}
+.update{
+	display: block;
+	align-items: center;
+	justify-content: center;
+}
+.update__option{
+	margin-top: 20px;
+	padding-left: 60px;
+}
+
+}
+
+@media (min-width: 1020px){
+	body{
+		margin-right: 0;
+		align-items: center;
+	}
+	main{
+		padding-left: 50px;
+	}
+	.navbar{
+		justify-content: space-between;
+	}
+	.container{
+		max-width: 800px;
+	}
+	.hero__container{
+		display: flex;
 	}
 	.explore__menu__gradient__bg{
 		position: absolute;
@@ -329,6 +392,10 @@ ul{
 		transform: skewY(-5deg);
 		padding: 0px 20px;
 	}
+	.explore__menu__container{
+		position: relative;
+	}
+	
 	.explore__menu__lists{
 		margin-top: 50px;
 		display: flex;
@@ -338,12 +405,48 @@ ul{
 	margin-top: -20px;
 	margin-bottom: 30px;
 }
+.restaurants__container{
+		display: flex;
+
+	}
+	.restaurant__1, .restaurant__4{
+	width: 300px;
+	height: 200px;
+}
+.restaurant__2, .restaurant__3{
+	
+	width: 300px;
+	height: 260px;
+}
+.restaurant__1__image,
+.restaurant__2__image,
+.restaurant__3__image,
+.restaurant__4__image{
+	width: 100%;
+	border-radius: 7px;
+}
+.update{
+	display: flex;
+	gap: 5px;
+	align-items: center;
+	justify-content: center;
+}
+.update__option{
+	margin-top: 20px;
+	padding-left: 20px;
+}
+.updation__related{
+	align-items: center;
+
+}
+.updation__heading{
+	font-size: 30px;
+}
+.update__option{
+	margin-top: 20px;
+	padding-left: 60px;
 }
 
-@media (min-width: 1020px){
-	.container{
-		max-width: 800px;
-	}
 	
 	
 }
